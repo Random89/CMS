@@ -13,4 +13,13 @@
  */
 class Connector {
     //put your code here
+    public function __construct() {
+        echo 'Konstruktor działa__';
+    }
+    
+    public function getinscription(){
+         
+        $inscription ="getinscription working\n";
+        echo $inscription;
+     }
 }

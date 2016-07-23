@@ -11,7 +11,10 @@ and open the template in the editor.
     </head>
     <body>
         <?php
-        echo "napis";
+        require('./Connector.php');
+        $connector = new Connector();
+        echo $connector->getinscription();
+        $connector->getinscription();
         ?>
     </body>
 </html>
