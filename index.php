@@ -10,11 +10,19 @@ and open the template in the editor.
         <title></title>
     </head>
     <body>
+        <form action="#">
+            First name: <input type="text" name="fname"><br>
+            Last name: <input type="text" name="lname"><br>
+            <input type="submit" value="Submit">
+        </form> 
         <?php
         require('./Connector.php');
-        $connector = new Connector();
+        require('./Name.php');
+        $connector = new Connector("Marcin");
+        $name = new Name("Marcin");
         echo $connector->getinscription();
         $connector->getinscription();
+        $connector->setinscription();
         ?>
     </body>
 </html>

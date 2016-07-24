@@ -12,14 +12,23 @@
  * @author Inzynier
  */
 class Connector {
+
     //put your code here
-    public function __construct() {
+    public $inscription = NULL;
+    public $_number = NULL;
+
+    public function __construct($number) {
+        $this->_number=$number;
         echo 'Konstruktor działa__';
     }
-    
-    public function getinscription(){
-         
-        $inscription ="getinscription working\n";
-        echo $inscription;
-     }
+
+    public function getinscription() {
+        echo $this->_number;
+        echo $inscription = "getinscription working\n";
+    }
+
+    public function setinscription() {
+        echo $inscription = "plus";
+    }
+
 }
